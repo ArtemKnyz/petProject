@@ -11,4 +11,8 @@ public class Controller {
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
         return String.format("Hello %s!", name);
     }
+    @GetMapping("/end")
+    public String end(@RequestParam(value = "name", defaultValue = "World") String name) {
+        return String.format("GoodBuy %s!", name);
+    }
 }
